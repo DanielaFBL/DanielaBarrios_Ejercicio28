@@ -1,0 +1,8 @@
+%.dat: DanielaBarrios_Ejercicio28.x
+	./DanielaBarrios_Ejercicio28.x
+
+DanielaBarrios_Ejercicio28.x: DanielaBarrios_Ejercicio28.cpp
+	c++ DanielaBarrios_Ejercicio28.cpp -o DanielaBarrios_Ejercicio28.x
+
+clean:
+	rm -rf *.x *.dat
