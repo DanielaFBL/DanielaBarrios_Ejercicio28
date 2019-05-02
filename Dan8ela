@@ -35,8 +35,8 @@ int main(){
       }
     while(tiempo<100){
         for(i=0;i<201;i++){
-            if((i>0 && i<201){
-                v_new[i] = v_old[i]+(delta_t*k/(pow(delta_x, 2)*c*r))*(v_old[i+1]+ v_old[i-1]-2*v_old[i][i]);
+            if(i>0 && i<201){
+                v_new[i] = v_old[i]+(delta_t*k/(pow(delta_x, 2)*c*r))*v_old[i+1]+ v_old[i-1]-2*v_old[i][i];
             }
                 
              tiempo=tiempo+delta_t;
