@@ -1,8 +1,8 @@
-%.dat: DanielaBarrios_Ejercicio28.x
-	./DanielaBarrios_Ejercicio28.x
+plot.png: placas.dat imagen.py
+	python imagen.py
 
-DanielaBarrios_Ejercicio28.x: DanielaBarrios_Ejercicio28.cpp
-	c++ DanielaBarrios_Ejercicio28.cpp -o DanielaBarrios_Ejercicio28.x
+%.dat : a.out
+	./a.out 
 
-clean:
-	rm -rf *.x *.dat
+a.out: DanielaBarrios_Ejercicio28.cpp
+	g++ DanielaBarrios_Ejercicio28.cpp
